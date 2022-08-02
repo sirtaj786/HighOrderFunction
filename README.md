@@ -87,4 +87,36 @@ var b=[2,4,5,67,8]
 var res=b.myReduce((acc,item)=>acc+item)
 console.log(res)
 
+ ***map***
+ The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+ const array = [1, 4, 9, 16];
 
+
+const res = array.map(x => x * 2);
+
+console.log(res);
+
+*****filter***
+ filtered down to just the elements from the given array that pass the test implemented by the provided function.
+ 
+ const array = [32, 33, 16, 40];
+const result = array.filter(num);
+
+function num(el) {
+  return el >= 18;
+}
+
+****reduce***
+The reduce() method returns a single value: the function's accumulated result.
+The reduce() method does not change the original array.
+
+const array = [1, 2, 3, 4];
+
+
+
+const sum = array.reduce(
+  (previousValue, currentValue) => previousValue + currentValue,
+  0
+);
+
+console.log(sum);
